@@ -3,7 +3,7 @@ name: Run Testsigma tests
 on:
   push:
     branches:
-      - "master"
+      - master
 
 jobs:
   build:

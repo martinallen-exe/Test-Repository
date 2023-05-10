@@ -13,6 +13,6 @@ jobs:
     steps:
       - name: Process script to run test
         run: |
-          bash ${GITHUB_WORKSPACE}/testsigma/process_tests.sh
+          bash testsigma/process_tests.sh
           echo "Successfully sent testing process to Testsigma!"
 

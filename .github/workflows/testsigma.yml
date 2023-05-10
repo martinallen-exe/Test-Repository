@@ -1,0 +1,13 @@
+name: Run Testsigma tests
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Process script to run test
+        run: |
+          cd testsigma
+          bash process_tests.sh
+          echo "Successfully sent testing process to Testsigma!"
+

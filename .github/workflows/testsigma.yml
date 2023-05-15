@@ -10,8 +10,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Process script to run test
         run: |
-          chmod +x ./process_tests.sh
-          bash ./process_tests.sh
+          chmod +x ./testsigma/process_tests.sh
+          bash ./testsigma/process_tests.sh
           echo "Successfully sent testing process to Testsigma!"
         shell: bash
 

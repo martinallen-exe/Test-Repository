@@ -7,9 +7,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
       - name: Process script to run test
         run: |
-          bash ${GITHUB_WORKSPACE}/process_tests.sh
-          ls -l
+          chmod +x ./process_tests.sh
+          bash ./process_tests.sh
           echo "Successfully sent testing process to Testsigma!"
+        shell: bash
 

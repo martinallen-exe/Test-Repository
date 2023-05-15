@@ -1,9 +1,6 @@
 name: Run Testsigma tests
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
   build:
@@ -12,6 +9,6 @@ jobs:
     steps:
       - name: Process script to run test
         run: |
-          bash process_tests.sh
+          bash ${GITHUB_WORKSPACE}/process_tests.sh
           echo "Successfully sent testing process to Testsigma!"
 
